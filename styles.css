@@ -1,0 +1,76 @@
+body {
+  background-color: lightpink;
+}
+
+.disable-hover {
+  pointer-events: none !important;
+
+}
+
+.ask {
+  font-family: fantasy;
+  font-size: 24px;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 30px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: orchid;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  max-width: 200px;
+  width: 100%;
+  font-family: fantasy;
+  transition: height 0.3s, font-size 0.3s;
+  height: 50px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.second-slide, .third-slide, .fourth-slide, .last-slide, .hearts {
+  display: none;
+  /* Initial styles for the first and second slide elements */
+}
+
+.animation {
+  opacity: 0; /* Set initial opacity to 0 */
+  transform: translateX(-50px); /* Move the element to the left initially */
+  animation: slideIn 2s ease forwards; /* Use the slideIn animation for 2 seconds */
+}
+
+@keyframes slideIn {
+  to {
+      opacity: 1; /* Slide in by changing opacity to 1 */
+      transform: translateX(0); /* Move the element to its original position */
+  }
+}
+.third-btn {
+max-width: 400px;
+margin-bottom: 15px;
+}
+
+
+
+.hearts {
+  position: fixed;
+  top: 140px;
+  left: 600px;
+}
